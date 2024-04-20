@@ -1,3 +1,5 @@
+import os
+
 """
 This file stores variables to be used between python files and functions some
 Github: https://github.com/tylerebowers/Schwab-API-Python
@@ -6,8 +8,8 @@ Github: https://github.com/tylerebowers/Schwab-API-Python
 
 class credentials:
     # Schwab account credentials
-    appKey = "Your App Key"
-    appSecret = "Your App Secret"
+    appKey = os.getenv("SCHWAB_APP_KEY")
+    appSecret = os.getenv("SCHWAB_APP_SECRET")
     callbackUrl = "https://127.0.0.1"
     accountNumber = ""
     encryptedId = ""
