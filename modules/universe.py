@@ -8,6 +8,9 @@ Github: https://github.com/tylerebowers/Schwab-API-Python
 
 class credentials:
     # Schwab account credentials
+    # Edit .zshrc to include the following lines:
+    # export SCHWAB_APP_KEY="pqr246"
+    # export SCHWAB_APP_SECRET="abcd123"
     appKey = os.getenv("SCHWAB_APP_KEY")
     appSecret = os.getenv("SCHWAB_APP_SECRET")
     callbackUrl = "https://127.0.0.1"
